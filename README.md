@@ -18,7 +18,7 @@ Graphic Era Hill University, Haldwani Campus. PBL Project.
 | Mode 1 | Simulates FIFO, LRU and Optimal page replacement step by step and compares their faults and hit ratios |
 | Mode 2 | Browser cache manager: visit, view, search, delete, expire and clear pages, with live statistics |
 
-![flowchart](docs/flowchart.png)
+
 
 ## How Mode 2 works
 - A **doubly linked list** keeps pages ordered by recent use.
