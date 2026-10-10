@@ -32,8 +32,7 @@ g++ -std=c++17 -Wall main.cpp mode1.cpp mode2.cpp -o cache
 ./cache
 ```
 
-## Sample output
-(paste a screenshot or a short terminal session here)
+
 
 ## Contributions
 - Mode 1 (page replacement): Sheetal Mehta
