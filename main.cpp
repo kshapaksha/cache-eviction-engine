@@ -1,45 +1,36 @@
+include<iostream>
+using namespace std;
+
+void runMode1();
+void runMode2();
 
 int main()
 {
-    cout << "============================================\n";
-    cout << "       CACHE MANAGEMENT SYSTEM\n";
-    cout << "============================================\n";
+    int choice = -1;
 
-    int choice;
-
-    do
+    while (choice != 0)
     {
-        cout << "\n--------------- MAIN MENU ---------------\n";
-        cout << "1. Page Replacement Algorithms (Mode 1)\n";
-        cout << "2. Browser Cache Management (Mode 2)\n";
-        cout << "3. Exit\n";
-
-        cout << "\nEnter your choice: ";
+        cout<<"\nCACHE MANAGEMENT SYSTEM\n";
+        cout<<"1. Page Replacement (FIFO/LRU/Optimal)\n";
+        cout << "2. Browser Cache Manager (LRU+TTL)\n";
+        cout<<"Enter choice:";
         cin >> choice;
 
         switch (choice)
         {
             case 1:
-            cout<<"\n Page Replacement Algorithms:";
-                mode1();
+                runMode1();
                 break;
-
             case 2:
-            cout<<"\n Browser Cache Manager:";
-                runBrowserCacheSystem();
+                runMode2();
                 break;
-
-            case 3:
-            cout<<"\n Exiting...";
-                cout << "\nProgram ended.\n";
-                 exit(0);
+            case 0:
+                cout << "Exiting program." << endl;
                 break;
-
             default:
-                cout << "\nInvalid choice! Please try again.\n";
+                cout << "Invalid choice. Please try again." << endl;
         }
-
-    } while (choice != 3);
+    }
 
     return 0;
 }
