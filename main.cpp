@@ -1,8 +1,8 @@
-include<iostream>
+#include<iostream>
 using namespace std;
 
-void runMode1();
-void runMode2();
+void mode1();
+void mode2();
 
 int main()
 {
@@ -19,10 +19,11 @@ int main()
         switch (choice)
         {
             case 1:
-                runMode1();
+                mode1();
                 break;
+
             case 2:
-                runMode2();
+                mode2();
                 break;
             case 0:
                 cout << "Exiting program." << endl;
